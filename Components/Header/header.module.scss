@@ -1,0 +1,73 @@
+.header{
+   width: 100vw;
+   height: 680px;
+}
+.headerImage{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   z-index: 0;
+}
+.headerDiv{
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.headerLogo{
+   width: 78px;
+   height: 42px;
+}
+.headerNavDiv{
+   position: absolute;
+   top: 30px;
+   left: 7%;
+   right: 7%;
+   width: 80%;
+   height: 70px;
+   margin: 40px auto;
+   border-radius: 18px;
+   background-color: #FFFFFF;
+   padding: 13px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 3;
+
+}
+
+.h1Div{
+   width: 733px;
+   height: 154px;
+   position: absolute;
+   z-index: 2;
+   left: 170px;
+   bottom: 90px;
+}
+.h1{
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 77.45px;
+   color: #FFFFFF;
+   margin: 0;
+}
+
+.slideDots{
+   width: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   bottom: 30px;
+   left: 49%;
+   right: 49%;
+}
+
+
+
+
+
+

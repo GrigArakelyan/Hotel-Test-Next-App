@@ -1,0 +1,35 @@
+.dateDiv{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: start;
+   width: 21%;
+}
+.pDate{
+   color: #000000;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 19.36px;
+   margin: 8px 0;
+}
+.date{
+   width: 100%;
+   height: 60px;
+   background-color: #FFFFFF;
+   border-radius: 12px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.image{
+   margin-left: 25px;
+   width: 24px;
+   height: 24px;
+}
+.pSubTitle{
+   margin-right:25px;
+   color: #1E1E1E;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 19.36px;
+}

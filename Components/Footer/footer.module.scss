@@ -1,0 +1,28 @@
+.footer{
+   background-color: #1E1E1E;
+   height: 520px;
+   width: 100vw;
+}
+.footerDiv{}
+
+.topDiv{
+   display: flex;
+   justify-content: space-around;
+   align-items: end;
+}
+.leftDiv{
+   width: 600px;
+   height: 164px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.inputDiv{
+   display: flex;
+   align-items: center;
+}
+.rightDiv{
+   width: 502px;
+   
+}
+.bottomDiv{}

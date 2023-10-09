@@ -1,0 +1,23 @@
+.selects{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: start;
+   width: 37%;
+}
+.pSelect{
+   color: #000000;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 19.36px;
+   margin: 8px 0;
+}
+.selectDiv{
+   background-color: #FFFFFF;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 12px;
+   height: 60px;
+}

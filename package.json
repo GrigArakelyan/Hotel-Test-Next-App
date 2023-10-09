@@ -6,20 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "json-server -w db.json -p 4200 -d 350"
   },
   "dependencies": {
+    "next": "latest",
+    "next-server": "^9.0.5",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "react-hook-form": "^7.47.0"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
+    "@mui/material": "^5.14.12",
+    "@mui/x-date-pickers": "^6.16.1",
+    "@mui/x-date-pickers-pro": "^6.16.1",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest"
+    "dayjs": "^1.11.10",
+    "sass": "^1.69.0",
+    "styled-components": "^6.0.8",
+    "typescript": "latest"
   }
 }

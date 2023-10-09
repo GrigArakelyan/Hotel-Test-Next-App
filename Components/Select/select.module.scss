@@ -1,0 +1,37 @@
+.selectDiv{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 50%;
+   margin-right: 8px;
+}
+.selectIMG{
+   width: 24px;
+   height: 24px;
+   margin-left: 25px;
+}
+.selectName{
+   color: #1E1E1E;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 19.36px;
+}
+.select{
+   border: none;
+   color: #1E1E1E;
+   background-color: #FFFFFF;
+   padding: 5px 10px;
+   font-size: 16px;
+   &:focus{
+      outline: none;
+      border: none;
+   }
+}
+.option{
+   border: none;
+   color: #1E1E1E;
+   font-size: 16px;
+   margin: 5px;
+   border-radius: 5px;
+   outline: none;
+}
