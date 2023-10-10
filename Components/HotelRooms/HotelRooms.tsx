@@ -3,6 +3,7 @@ import Style from "./hotelRooms.module.scss"
 import RoomItem from "./Item/RoomItem";
 import OtherRooms from "./Item/OtherRooms";
 import Link from "next/link";
+import { FC } from "react";
 
 const getTypeHotelRooms = async () => {
    const res = await fetch(`http://localhost:4200/categori`);
@@ -10,7 +11,7 @@ const getTypeHotelRooms = async () => {
    return data 
 }
 
-const HotelRooms = async () => {
+const HotelRooms:FC = async () => {
 
    const rooms:RoomItemType[] = await getTypeHotelRooms();
    const room = rooms.filter(room => room.category === "rooms")

@@ -1,4 +1,6 @@
-const Newsletter = () => {
+import { FC } from "react"
+
+const Newsletter:FC = () => {
    return (
      <h1>Newsletter Page</h1>
    )

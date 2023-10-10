@@ -1,4 +1,6 @@
-const About = () => {
+import { FC } from "react"
+
+const About:FC = () => {
    return (
      <h1>About Page</h1>
    )

@@ -5,8 +5,9 @@ import Link from "next/link"
 import Style from './navigation.module.scss'
 import { ABOUT, HOME, NEWSLETTER, PRICING, ROOMS, SERVICES } from "@/constants/rout"
 import { HeaderLogo } from "@/constants/public"
+import { FC } from "react"
 
-const Navigation = () => {
+const Navigation:FC = () => {
 
    const isActive = useIsActive()
    return (

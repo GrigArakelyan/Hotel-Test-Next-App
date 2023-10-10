@@ -3,9 +3,10 @@ import Style from "./header.module.scss"
 import Navigation from "../Navigation/Navigation"
 import { HeaderImageOne } from "@/constants/public"
 import SlideDot from "../SlideDot/SlideDot"
+import { FC } from "react"
 
 
-const Header = () => {
+const Header:FC = () => {
 
    return (
       <header className={Style.header}>

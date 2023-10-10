@@ -1,9 +1,10 @@
+import { FC } from "react"
 import Button from "../Button/Button"
 import RoomBookingDate from "./RoomBookingDate/RoomBookingDate"
 import RoomBookingSelects from "./RoomBookingSelects/RoomBookingSelects"
 import Style from "./roomBooking.module.scss"
 
-const RoomBooking = () => {
+const RoomBooking:FC = () => {
 
    return(
       <div className={Style.roomBooking}>

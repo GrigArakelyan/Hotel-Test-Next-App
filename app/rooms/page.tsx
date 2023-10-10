@@ -1,4 +1,6 @@
-const Rooms = () => {
+import { FC } from "react"
+
+const Rooms:FC = () => {
    return (
      <h1>Rooms Page</h1>
    )

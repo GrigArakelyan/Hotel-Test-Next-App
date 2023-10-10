@@ -2,6 +2,7 @@ import { SpecialOffersType } from "@/types/types";
 import BestOfferItem from "./BestOfferItem/BestOfferItem"
 import BestOfferTitle from "./BestOfferTitle/BestOfferTitle"
 import Style from "./bestOffer.module.scss"
+import { FC } from "react";
 
 
 const getSpecialOffers = async () => {
@@ -10,7 +11,7 @@ const getSpecialOffers = async () => {
    return data
 }
 
-const BestOffer = async () => {
+const BestOffer:FC = async () => {
 
    const data:SpecialOffersType[] = await getSpecialOffers();
 

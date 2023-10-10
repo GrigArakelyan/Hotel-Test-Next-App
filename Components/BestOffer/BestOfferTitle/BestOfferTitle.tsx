@@ -1,7 +1,8 @@
 import Link from "next/link";
 import  Style  from "./bestOfferTitle.module.scss";
+import { FC } from "react";
 
-const BestOfferTitle = () => {
+const BestOfferTitle:FC = () => {
    return (
       <div className={Style.titleFlex}>
          <div className={Style.leftTitleFlex}>

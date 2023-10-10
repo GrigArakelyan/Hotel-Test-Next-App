@@ -3,6 +3,7 @@ import Button from "../Button/Button"
 import Input from "../Input/Input"
 import Style from "./footer.module.scss"
 import { HoteLogo } from "@/constants/public"
+import { FC } from "react"
 
 const getFooterTexts = async () => {
    const res = await fetch(`http://localhost:4200/footer`);
@@ -10,7 +11,7 @@ const getFooterTexts = async () => {
    return data 
 }
 
-const Footer = async () => {
+const Footer:FC = async () => {
 
    const data:string[] = await getFooterTexts()
 
