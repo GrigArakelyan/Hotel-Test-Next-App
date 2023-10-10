@@ -24,7 +24,7 @@ const RootLayout:FC<LayoutProp> = ({children})=> {
         <main >
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

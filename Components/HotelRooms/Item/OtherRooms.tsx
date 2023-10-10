@@ -13,7 +13,7 @@ const OtherRooms:FC<RoomItemProps> = ({room}) => {
 
    return (
       <div className={Style.otherRoomsItem} key={lable}>
-         <Image src={`/${src}`} width={470} height={375} alt={`${src}`} className={Style.itemImage}/>
+         <Image src={`/${src}`} width={500} height={375} alt={`${src}`} className={Style.itemImage}/>
          <h1 className={Style.itemLabel}>{lable}</h1>
       </div>
    )

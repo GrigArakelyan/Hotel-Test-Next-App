@@ -6,12 +6,13 @@
 .itemsFlexDiv{   
    width: 94%;
    display: flex;
+   flex-shrink: inherit;
    justify-content: space-around;
    margin: 50px ;
 }
 .roomDiv{
-   width: 33%;
-   margin: 50px 15px;
+   width: 30%;
+   margin: 50px 15px 50px 25px;
 }
 .otherRoomsDiv{
    width: 70%;

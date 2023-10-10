@@ -34,5 +34,6 @@
                   "numberOfPeople": 2,
                   "kindOf": "table"
             }
-      ]
+      ],
+      "footer": ["About us", "FAQ", "Services & Facilities", "Contact", "Term of Use", "Careers", "Location", "Privacy Police", "How to book"]
 }
