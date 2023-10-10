@@ -8,6 +8,21 @@ Link{
   text-decoration: none;
   color:#262626;
 }
-.container{
-  // margin-top: 690px;
+// .container{
+//   margin-top: 690px;
+// }
+
+
+.loadingDiv{
+  margin: 50px;
+}
+.loadingH{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+.errorH{
+  font-size: 40px;
+  color: red;
+  text-align: center;
 }

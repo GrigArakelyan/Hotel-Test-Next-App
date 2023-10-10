@@ -1,0 +1,31 @@
+
+.roomsitem{
+   height: 760px;
+   width: 470px;
+   border-radius: 42px;
+   position: relative;
+}
+
+.otherRoomsItem{
+   height: 360px;
+   width: 470px;
+   border-radius: 42px;
+   position: relative;
+   margin-bottom: 25px;
+}
+.itemImage{
+   width: 100%;
+   height: 100%;
+}
+.itemLabel{
+   width: 300px;
+   font-size: 36;
+   font-weight: 700;
+   color: #FFFFFF;
+   line-height: 43.57px;
+   position: absolute;
+   bottom: 30px;
+   z-index: 2;
+   text-align: center;
+   margin: 0 17%;
+}

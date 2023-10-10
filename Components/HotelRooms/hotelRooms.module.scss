@@ -1,0 +1,19 @@
+.hotelRoomsDiv{
+   margin: 30px 0px;
+   width: 100%;
+   background-color: #F3F3F3;
+}
+.itemsFlexDiv{
+   display: flex;
+   justify-content: space-around;
+   margin: 50px 120px;
+}
+.roomDiv{
+   margin: 50px 15px;
+}
+.otherRoomsDiv{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 50px 15px 20px 15px;
+}

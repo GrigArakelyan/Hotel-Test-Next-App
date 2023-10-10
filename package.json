@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "mock": "json-server -w db.json -p 4200 -d 350"
+    "mock": "json-server -w db.json -p 4200 -d 350",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\""
   },
   "dependencies": {
+    "concurrently": "^8.2.1",
+    "json-server": "^0.17.4",
     "next": "latest",
-    "next-server": "^9.0.5",
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.47.0"

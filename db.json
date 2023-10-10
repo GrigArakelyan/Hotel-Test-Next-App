@@ -1,0 +1,9 @@
+{
+   "categori" : [
+         {"lable" : "Rooms", "category": "rooms", "src":"Rooms.png", "href": "/rooms"},
+         {"lable" : "Dinning", "category": "dinning", "src":"Dining.png", "href": "/dinning"},
+         {"lable" : "Conferance & Meetings", "category": "conferance & meetings", "src":"Conferences.png", "href": "/conference"},
+         {"lable" : "Service & Facilities", "category": "service & facilities", "src":"Service.png", "href": "/service"},
+         {"lable" : "Wedding Package", "category": "wedding package", "src":"Wedding.png", "href": "/wedding"}
+      ]
+}
