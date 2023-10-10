@@ -3,17 +3,27 @@
    width: 100%;
    background-color: #F3F3F3;
 }
-.itemsFlexDiv{
+.itemsFlexDiv{   
+   width: 94%;
    display: flex;
    justify-content: space-around;
-   margin: 50px 120px;
+   margin: 50px ;
 }
 .roomDiv{
+   width: 33%;
    margin: 50px 15px;
 }
 .otherRoomsDiv{
+   width: 70%;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-   margin: 50px 15px 20px 15px;
+   margin: 50px 0 20px 0;
+}
+
+.rooms{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 50px 15px;
 }

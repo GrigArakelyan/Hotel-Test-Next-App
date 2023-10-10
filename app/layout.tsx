@@ -21,7 +21,7 @@ const RootLayout:FC<LayoutProp> = ({children})=> {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className='container'>
+        <main >
           {children}
         </main>
         {/* <Footer /> */}

@@ -1,0 +1,90 @@
+.itemDiv{
+   width: 27%;
+   height: auto;
+   margin: 20px;
+   background-color: #FFFFFF;
+   border-radius: 42px;
+   box-shadow: 0px 4px 60px 0px #00346540;
+}
+.itemBody{
+   margin: 20px;
+}
+.itemImage{
+   border-radius: 42px;
+   width: 100%;
+   height: 100%;
+}
+
+.pCategory{
+   color: #5E5E5E;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 14px;
+}
+
+.titleDiv{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.title{
+   color: #1E1E1E;
+   width: 85%;
+   height: auto;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 29px;
+}
+.peopleDiv{
+   width: 15%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.peopleImg{
+   width: 13px;
+   height: 16px;
+   color: #1E1E1E;
+   margin-right: 5px;
+}
+.peopleNum{
+   color: #1E1E1E;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 19px;
+   margin-top: 3px;
+}
+
+
+.text{
+   width: 99%;
+   height: auto;
+   color: #5E5E5E;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 14.5px;
+}
+
+
+.kindOfDiv{
+   width: 100%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   margin: 50px 0;
+}
+.price{
+   color: #1E1E1E;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 44px;
+   margin: 0;
+}
+.kindOf{
+   color: #1E1E1E;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   margin-left: 5px;
+}

@@ -10,15 +10,13 @@ type RoomItemProps = {
 }
 
 const RoomItem:FC<RoomItemProps> = ({room}) => {
-   const {src, lable, href} = room;
+   const {src, lable} = room;
 
    return (
-      <Link href={href}>
-         <div className={Style.roomsitem}>
-            <Image src={`/${src}`} width={470} height={760} alt="" className={Style.itemImage}/>
-            <h1 className={Style.itemLabel}>{lable}</h1>
-         </div>
-      </Link>
+      <div className={Style.roomsitem} key={room.lable}>
+         <Image src={`/${src}`} width={470} height={760} alt="" className={Style.itemImage}/>
+         <h1 className={Style.itemLabel}>{lable}</h1>
+      </div>
    )
 }
 
