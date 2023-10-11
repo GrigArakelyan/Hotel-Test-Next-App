@@ -1,6 +1,6 @@
 .itemDiv{
-   width: 27%;
-   height: auto;
+   width: calc(30% - 40px);
+   height: calc(100% - 40px);
    margin: 20px;
    background-color: #FFFFFF;
    border-radius: 42px;
@@ -8,11 +8,16 @@
 }
 .itemBody{
    margin: 20px;
+   width: calc(100% - 40px);
+   height: calc(100% - 40px);
 }
 .itemImage{
    border-radius: 42px;
    width: 100%;
    height: 100%;
+}
+.itemTextBody{
+   width: 100%;
 }
 
 .pCategory{
@@ -20,6 +25,7 @@
    font-size: 12px;
    font-weight: 700;
    line-height: 14px;
+   margin-top: 15px 0 5px 0;
 }
 
 .titleDiv{
@@ -30,25 +36,27 @@
 }
 .title{
    color: #1E1E1E;
-   width: 85%;
+   width: 80%;
    height: auto;
    font-size: 24px;
    font-weight: 700;
    line-height: 29px;
 }
 .peopleDiv{
-   width: 15%;
+   width: 14%;
    display: flex;
    align-items: center;
    justify-content: space-between;
+
 }
 .peopleImg{
-   width: 13px;
+   width: 18px;
    height: 16px;
    color: #1E1E1E;
    margin-right: 5px;
 }
 .peopleNum{
+   width: 50%;
    color: #1E1E1E;
    font-size: 16px;
    font-weight: 600;

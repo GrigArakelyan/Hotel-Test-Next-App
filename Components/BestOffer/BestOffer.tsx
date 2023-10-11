@@ -3,13 +3,10 @@ import BestOfferItem from "./BestOfferItem/BestOfferItem"
 import BestOfferTitle from "./BestOfferTitle/BestOfferTitle"
 import Style from "./bestOffer.module.scss"
 import { FC } from "react";
+import { getSpecialOffers } from "@/services/fetch";
 
 
-const getSpecialOffers = async () => {
-   const res = await fetch(`http://localhost:4200/special-Offers`);
-   const data = res.json();
-   return data
-}
+
 
 const BestOffer:FC = async () => {
 

@@ -9,7 +9,9 @@ interface ButtonProps {
 const Button:FC<ButtonProps> = ({title, type, border}) => {
    return(
       <div className={Style.buttonDiv}>
-         <button className={border ? Style.buttonBorder : Style.button} type={type}>{title}</button>
+      <button className={border ? Style.buttonBorder : Style.button} 
+         type={type}>
+      {title}</button>
       </div>
    )
 }

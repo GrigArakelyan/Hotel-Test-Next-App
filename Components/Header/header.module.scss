@@ -23,29 +23,28 @@
 }
 .headerNavDiv{
    position: absolute;
-   top: 30px;
+   top: 70px;
    left: 7%;
    right: 7%;
-   width: 80%;
-   height: 70px;
-   margin: 40px auto;
+   width: 86%;
+   height: 83px;
+   margin: 0 auto;
    border-radius: 18px;
    background-color: #FFFFFF;
-   padding: 13px 40px;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    z-index: 3;
 
 }
 
 .h1Div{
-   width: 733px;
-   height: 154px;
+   width: 50%;
+   padding: 5% 45% 5% 5%;
    position: absolute;
    z-index: 2;
-   left: 170px;
-   bottom: 90px;
+   left: 5%;
+   bottom: 1%;
 }
 .h1{
    font-size: 64px;
@@ -56,14 +55,14 @@
 }
 
 .slideDots{
-   width: 50px;
+   width: 4%;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    position: absolute;
    bottom: 30px;
-   left: 49%;
-   right: 49%;
+   left: 48%;
+   right: 48%;
 }
 
 

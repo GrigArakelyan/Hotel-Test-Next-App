@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Style from "./item.module.scss"
 import { FC } from "react"
-import Link from "next/link";
 import { RoomItemType } from "@/types/types";
 
 

@@ -15,7 +15,9 @@ const RoomBooking:FC = () => {
          <div className={Style.reservationDiv}>
             <RoomBookingDate />
             <RoomBookingSelects />
-            <Button title={"BOOK NOW"} type="button"/>
+            <div className={Style.buttonDiv}>
+               <Button title={"BOOK NOW"} type="button"/>
+            </div>
          </div>
       </div>
    )

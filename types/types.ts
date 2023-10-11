@@ -3,6 +3,7 @@ export type RoomItemType = {
    lable: string;
    href: string;
    category: string;
+   type: "big" | "small";
 }
 
 export type SpecialOffersType = {

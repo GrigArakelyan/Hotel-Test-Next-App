@@ -4,12 +4,8 @@ import Input from "../Input/Input"
 import Style from "./footer.module.scss"
 import { HoteLogo } from "@/constants/public"
 import { FC } from "react"
+import { getFooterTexts } from "@/services/fetch"
 
-const getFooterTexts = async () => {
-   const res = await fetch(`http://localhost:4200/footer`);
-   const data = await res.json()
-   return data 
-}
 
 const Footer:FC = async () => {
 
@@ -22,10 +18,13 @@ const Footer:FC = async () => {
             <div className={Style.leftDiv}>
                <h3 className={Style.textH3}>Newsletter & Special Promo</h3>
                <div className={Style.inputDiv}>
-                  <Input type={"text"} 
-                     placeholder="Enter your email here"
-                  />
-                  <Button title={"Subscribe"} type={"button"} border/>
+                  <div className={Style.input}>
+                     <Input type={"text"} 
+                        placeholder="Enter your email here"/>
+                  </div>
+                  <div className={Style.button}>
+                     <Button title={"Subscribe"} type={"button"} border/>
+                  </div>
                </div>
             </div>
             <div className={Style.rightDiv}>

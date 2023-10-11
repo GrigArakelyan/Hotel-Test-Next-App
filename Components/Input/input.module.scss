@@ -5,10 +5,9 @@
    border-bottom-left-radius: 12px;
    border-right: none;
    height: 60px;
-   width: 100%;
 }
 .input{
-   width: 100%;
+   width: calc(100% - 40px);
    border-radius: 12px;
    height: 60px;
    padding:0 20px ;

@@ -16,7 +16,7 @@ const BestOfferItem:FC<BestOfferItemProps> = ({item}) => {
       <div className={Style.itemDiv} key={lable}>
          <div className={Style.itemBody}>
             <Image src={`/${src}`}  alt="" width={360} height={280} className={Style.itemImage}/>
-            <div>
+            <div className={Style.itemTextBody}>
                <p className={Style.pCategory}>{categoty}</p>
                <div className={Style.titleDiv}>
                   <h1 className={Style.title}>{lable}</h1>

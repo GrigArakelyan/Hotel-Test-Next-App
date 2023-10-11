@@ -4,42 +4,36 @@ import RoomItem from "./Item/RoomItem";
 import OtherRooms from "./Item/OtherRooms";
 import Link from "next/link";
 import { FC } from "react";
+import { getTypeHotelRooms } from "@/services/fetch";
 
-const getTypeHotelRooms = async () => {
-   const res = await fetch(`http://localhost:4200/categori`);
-   const data = res.json();
-   return data 
-}
+
 
 const HotelRooms:FC = async () => {
 
    const rooms:RoomItemType[] = await getTypeHotelRooms();
-   const room = rooms.filter(room => room.category === "rooms")
-   const atherRooms = rooms.filter(room => room.category !== "rooms");
-
+   const bigRooms:RoomItemType[] = rooms.filter(room => room.type === "big");
+   const smallRooms:RoomItemType[] = rooms.filter(room => room.type === "small");
+   console.log(bigRooms)
+   
+   
    return (
       <div className={Style.hotelRoomsDiv}>
-         {rooms.length % 2 === 1 ? 
-            <div className={Style.itemsFlexDiv}>
-               <div className={Style.roomDiv}>
-                  <Link href={room[0].href}>
-                     <RoomItem room={room[0]}/>
-                  </Link>
-               </div>
-               <div className={Style.otherRoomsDiv}>
-                  {atherRooms.map((room) => (
-                     <Link href={room.href}>
-                        <OtherRooms room={room} />
-                     </Link>
-                  ))}
-               </div>
-            </div> : 
-            <div className={Style.rooms}>
-               {rooms.map((room) => (
-                     <OtherRooms room={room} />
-               ))}
+         <div className={bigRooms.length ? Style.itemsDiv : Style.notBigRoom}>
+            <div className={bigRooms.length ? Style.bigRoom : Style.none}>
+            {bigRooms.length && bigRooms.map((item) => (
+               <Link href={item.href}>
+                  <RoomItem room={item}/>
+               </Link>
+            ))}
             </div>
-         }
+            <div className={bigRooms.length ? Style.smallRoom : Style.notBigItem}>
+            {smallRooms.length && smallRooms.map((item) => (
+               <Link href={item.href}>
+                  <OtherRooms room={item} />
+               </Link>
+            ))}
+            </div>
+         </div> 
       </div>
    )
 }

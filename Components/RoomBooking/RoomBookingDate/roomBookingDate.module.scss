@@ -3,7 +3,7 @@
    flex-direction: column;
    align-items: flex-start;
    justify-content: start;
-   width: 21%;
+   width: 22%;
 }
 .pDate{
    color: #000000;
@@ -13,23 +13,31 @@
    margin: 8px 0;
 }
 .date{
-   width: 100%;
+   width: 98%;
    height: 60px;
+   padding: 0 2%;
    background-color: #FFFFFF;
    border-radius: 12px;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
 }
 .image{
-   margin-left: 25px;
+   margin: 0 8%;
    width: 24px;
    height: 24px;
 }
 .pSubTitle{
-   margin-right:25px;
+   width: 84%;
+   margin: 0 8%;
    color: #1E1E1E;
    font-size: 16px;
    font-weight: 600;
    line-height: 19.36px;
+}
+
+@media screen and (max-width: 1010px){
+   .pSubTitle{
+      font-size: 15px;
+   }
 }
