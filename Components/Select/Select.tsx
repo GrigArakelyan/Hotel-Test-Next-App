@@ -10,7 +10,7 @@ type SelectProps = {
 const Select:FC<SelectProps> = ({src, name}) => {
    return (
       <div className={Style.selectDiv}>
-         {src && <Image src={src} alt="" width={24} height={24} className={Style.selectIMG}/>}
+         {src && <Image src={src} alt="" width={23} height={23} className={Style.selectIMG}/>}
          <p className={Style.selectName}>{name}</p>
          <select name={name} id="" className={Style.select}>{name}
             <option className={Style.option} value={0}>{` ${'0'} `}</option>
