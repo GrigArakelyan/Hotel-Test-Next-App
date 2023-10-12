@@ -3,8 +3,8 @@ import { FC } from "react"
 const NotFound:FC = () => {
 
    return(
-      <div className="loadingDiv">
-         <h2 className="loadingH">Not-Found</h2>
+      <div className="centerDiv">
+         <h2 className="centerH">Not-Found</h2>
       </div>
    )
 }
