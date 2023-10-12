@@ -4,7 +4,6 @@ import type { Metadata } from 'next'
 import { FC, ReactNode } from 'react'
 import Footer from '@/Components/Footer/Footer'
 import Header from '@/Components/Header/Header'
-import Head from 'next/head'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,6 +17,9 @@ type LayoutProp = {
 }
 
 const RootLayout:FC<LayoutProp> = ({children})=> {
+
+  
+
   return (
     <html lang="en">
       <head>

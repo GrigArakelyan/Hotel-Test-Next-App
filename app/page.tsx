@@ -1,6 +1,7 @@
 import BestOffer from "@/Components/BestOffer/BestOffer"
 import HotelRooms from "@/Components/HotelRooms/HotelRooms"
 import RoomBooking from "@/Components/RoomBooking/RoomBooking"
+import Head from "next/head"
 import { FC } from "react"
 
 
