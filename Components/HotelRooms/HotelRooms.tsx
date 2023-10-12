@@ -13,7 +13,6 @@ const HotelRooms:FC = async () => {
    const rooms:RoomItemType[] = await getTypeHotelRooms();
    const bigRooms:RoomItemType[] = rooms.filter(room => room.type === "big");
    const smallRooms:RoomItemType[] = rooms.filter(room => room.type === "small");
-   console.log(bigRooms)
    
    
    return (

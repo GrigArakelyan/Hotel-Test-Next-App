@@ -1,14 +1,65 @@
 {
-   "categories" : [
-      {"lable" : "Rooms", "category": "rooms", "src":"Rooms.png", "href": "/rooms", "type": "big"},
-      {"lable" : "Dinning", "category": "dinning", "src":"Dining.png", "href": "/dinning", "type": "small"},
-      {"lable" : "Conferance & Meetings", "category": "conferance & meetings", "src":"Conferences.png", "href": "/conference", "type": "small"},
-      {"lable" : "Service & Facilities", "category": "service & facilities", "src":"Service.png", "href": "/service", "type": "small"},
-      {"lable" : "Wedding Package", "category": "wedding package", "src":"Wedding.png", "href": "/wedding", "type": "small"}
-   ],
+      "header-images": [
+            {
+                  "src": "/Image.png", 
+                  "width": 1440, 
+                  "height0": 680, 
+                  "name": "HeaderImageOne"
+            },
+            {
+                  "src": "/Image.png", 
+                  "width": 1440, 
+                  "height0": 680, 
+                  "name": "HeaderImageTwo"
+            },
+            {
+                  "src": "/Image.png", 
+                  "width": 1440, 
+                  "height0": 680, 
+                  "name": "HeaderImageThree"
+            }
+      ],
 
-   "special-offers" : [
-         {
+      "categories" : [
+            {
+                  "lable" : "Rooms", 
+                  "category": "rooms", 
+                  "src":"Rooms.png", 
+                  "href": "/rooms", 
+                  "type": "big"
+            },
+            {
+                  "lable" : "Dinning", 
+                  "category": "dinning", 
+                  "src":"Dining.png", 
+                  "href": "/dinning", 
+                  "type": "small"
+            },
+            {
+                  "lable" : "Conferance & Meetings", 
+                  "category": "conferance & meetings", 
+                  "src":"Conferences.png", 
+                  "href": "/conference", 
+                  "type": "small"
+            },
+            {
+                  "lable" : "Service & Facilities", 
+                  "category": "service & facilities", 
+                  "src":"Service.png", 
+                  "href": "/service", 
+                  "type": "small"
+            },
+            {
+                  "lable" : "Wedding Package", 
+                  "category": "wedding package", 
+                  "src":"Wedding.png", 
+                  "href": "/wedding", 
+                  "type": "small"
+            }
+      ],
+
+      "special-offers" : [
+            {
                "lable": "Hooneymoon",
                "categoty": "Room", 
                "src": "Hooneymoon.png", 
@@ -16,8 +67,8 @@
                "price": 699, 
                "numberOfPeople": 2,
                "kindOf": "night"
-         },
-         {
+            },
+            {
                "lable": "Meetings",
                "categoty": "Room", 
                "src": "Meetings.png", 
@@ -25,8 +76,8 @@
                "price": 999, 
                "numberOfPeople": 30,
                "kindOf": "night"
-         },
-         {
+            },
+            {
                "lable": "Romantic Dining",
                "categoty": "Dining", 
                "src": "RomanticDining.png", 
@@ -34,8 +85,8 @@
                "price": 499, 
                "numberOfPeople": 2,
                "kindOf": "table"
-         }
-   ],
+            }
+      ],
 
-   "footer": ["About us", "FAQ", "Services & Facilities", "Contact", "Term of Use", "Careers", "Location", "Privacy Police", "How to book"]
+      "footer": ["About us", "FAQ", "Services & Facilities", "Contact", "Term of Use", "Careers", "Location", "Privacy Police", "How to book"]
 }

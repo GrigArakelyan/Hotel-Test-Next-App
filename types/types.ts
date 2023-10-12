@@ -16,3 +16,10 @@ export type SpecialOffersType = {
    kindOf: string,
    href: string;
 }
+
+export type HeaderImageType = {
+   src: string, 
+   width: number, 
+   height0: number, 
+   name: string
+}

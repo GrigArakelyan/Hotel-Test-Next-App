@@ -1,17 +1,20 @@
-import Image from "next/image"
 import Style from "./header.module.scss"
 import Navigation from "../Navigation/Navigation"
-import { HeaderImageOne } from "@/constants/public"
 import SlideDot from "../SlideDot/SlideDot"
 import { FC } from "react"
+import HeaderImage from "./HeaderImage"
 
 
-const Header:FC = () => {
+const Header:FC = async () => {
+
+
 
    return (
+
+      
       <header className={Style.header}>
          <div className={Style.headerDiv}>
-            <Image src={HeaderImageOne} alt="" width={1440} height={680} className={Style.headerImage}/>
+            <HeaderImage />
             <div className={Style.headerNavDiv}>
                <Navigation />
             </div>

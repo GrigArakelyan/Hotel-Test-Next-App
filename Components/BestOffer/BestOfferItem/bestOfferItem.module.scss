@@ -96,3 +96,43 @@
    line-height: 20px;
    margin-left: 5px;
 }
+
+@media screen and (max-width: 1200px){
+   .title{
+      font-size: 20px;
+   }
+   .title{
+      width: 75%;
+   }
+   .peopleDiv{
+      width: 23%;
+   }
+   .price{
+      font-size: 32px;
+   }
+   .kindOf{
+      font-size: 14px;
+   }
+}
+@media screen and (max-width: 945px){
+   .title{
+      font-size: 18px;
+   }
+   .price{
+      font-size: 28px;
+   }
+   .kindOf{
+      font-size: 11px;
+   }
+}
+@media screen and (max-width: 888px){
+   .titleDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .title{
+      width: 100%;
+      text-align: center;
+   }
+}
