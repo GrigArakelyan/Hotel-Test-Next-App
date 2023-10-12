@@ -1,0 +1,39 @@
+.selectsDiv{
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.pSelects{
+   color: #000000;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 19px;
+}
+
+.selects{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #FFFFFF;
+   border-radius: 12px;
+   height: 60px;
+   width: 100%;
+}
+
+
+
+.select{
+   width: 47%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.pSelect{
+   color: #1E1E1E;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 19px;
+}

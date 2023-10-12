@@ -4,6 +4,10 @@ export type RoomItemType = {
    href: string;
    category: string;
    type: "big" | "small";
+   quantity : {
+      adults: number;
+      children : number;
+      }
 }
 
 export type SpecialOffersType = {

@@ -1,8 +1,6 @@
 import { FC } from "react"
-import Button from "../Button/Button"
-import RoomBookingDate from "./RoomBookingDate/RoomBookingDate"
-import RoomBookingSelects from "./RoomBookingSelects/RoomBookingSelects"
 import Style from "./roomBooking.module.scss"
+import RoomsFilter from "./RoomsFilter/RoomsFilter"
 
 const RoomBooking:FC = () => {
 
@@ -12,13 +10,7 @@ const RoomBooking:FC = () => {
             <h1 className={Style.h1}>Book a Room</h1>
             <p className={Style.p}>Discover the perfect space for you!</p>
          </div>
-         <div className={Style.reservationDiv}>
-            <RoomBookingDate />
-            <RoomBookingSelects />
-            <div className={Style.buttonDiv}>
-               <Button title={"BOOK NOW"} type="button"/>
-            </div>
-         </div>
+         <RoomsFilter />
       </div>
    )
 }

@@ -26,35 +26,55 @@
                   "category": "rooms", 
                   "src":"Rooms.png", 
                   "href": "/rooms", 
-                  "type": "big"
+                  "type": "big",
+                  "quantity" : {
+                        "adults": 2,
+                        "children" : 2
+                        }
             },
             {
                   "lable" : "Dinning", 
                   "category": "dinning", 
                   "src":"Dining.png", 
                   "href": "/dinning", 
-                  "type": "small"
+                  "type": "small",
+                  "quantity" : {
+                        "adults": 2,
+                        "children" : 2
+                        }
             },
             {
                   "lable" : "Conferance & Meetings", 
                   "category": "conferance & meetings", 
                   "src":"Conferences.png", 
                   "href": "/conference", 
-                  "type": "small"
+                  "type": "small",
+                  "quantity" : {
+                        "adults": 7,
+                        "children" : 0
+                        }
             },
             {
                   "lable" : "Service & Facilities", 
                   "category": "service & facilities", 
                   "src":"Service.png", 
                   "href": "/service", 
-                  "type": "small"
+                  "type": "small",
+                  "quantity" : {
+                        "adults": 10,
+                        "children" : 0
+                        }
             },
             {
                   "lable" : "Wedding Package", 
                   "category": "wedding package", 
                   "src":"Wedding.png", 
                   "href": "/wedding", 
-                  "type": "small"
+                  "type": "small",
+                  "quantity" : {
+                        "adults": 10,
+                        "children" : 10
+                        }
             }
       ],
 
