@@ -1,44 +1,41 @@
 "use client"
-import { FC, FormEventHandler, useState } from "react"
+import { FC, FormEventHandler, useCallback, useState } from "react"
 import RoomBookingDate from "./RoomBookingDate/RoomBookingDate"
 import Button from "@/Components/Button/Button"
 import Style from "../roomBooking.module.scss"
 import RoomSelects from "./RoomSelects/RoomSelects"
-import { Controller, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import BasicModal from "@/Components/Modal/Modal"
+import { FilterRoomsType, RoomItemType } from "@/types/types"
+import { useRouter, useSearchParams } from "next/navigation"
+import { HOME } from "@/constants/rout"
 
-interface RoomsFilterType {
-   adults: number;
-   children: number;
-   day?: string;
-}
+
+
 
 const RoomsFilter:FC = () => {
+   const router = useRouter()
 
    const [open, setOpen] = useState(false);
    const handleOpen = () => setOpen(true);
    const handleClose = () => setOpen(false);
    
-   const {register, control, formState:{errors, isDirty }, handleSubmit} = useForm()
+   const {control, handleSubmit} = useForm();
 
-   const filterRoom = (data: RoomsFilterType) => {
-      const day = new Date(data.day as unknown as Date).toDateString()
-      const filterData: RoomsFilterType = {
-         adults: data.adults,
-         children: data.children,
-         day: day
-      }
-      console.log(filterData, "FILTER DATA")
+
+   const filterRoom:(data:FilterRoomsType) => void = (data) => {
+      router.push(`${HOME}?adults=${data.adults}&children=${data.children}&day=${data.day}`)
    }
+
    
    return (
-      <form className={Style.reservationDiv} onSubmit={handleSubmit(filterRoom as any)}>
-            <RoomBookingDate handleOpen={handleOpen}/>
-            <BasicModal handleClose={handleClose} open={open} control={control} name={"day"}/>
-            <RoomSelects control={control}/>
-            <div className={Style.buttonDiv}>
-               <Button title={"BOOK NOW"} type="submit"/>
-            </div>
+      <form action={HOME} className={Style.reservationDiv} onSubmit={handleSubmit(filterRoom as any)}>
+         <RoomBookingDate handleOpen={handleOpen}/>
+         <BasicModal handleClose={handleClose} open={open} control={control} name={"day"}/>
+         <RoomSelects control={control}/>
+         <div className={Style.buttonDiv}>
+            <Button title={"BOOK NOW"} type="submit"/>
+         </div>
       </form>
    )
 }

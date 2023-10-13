@@ -14,6 +14,7 @@ const style = {
   height: 200,
   bgcolor: 'background.paper',
   border: 'none',
+  borderRadius: "10px" ,
   boxShadow: 24,
   p: 4,
 };
@@ -29,7 +30,6 @@ const BasicModal:React.FC<BasicModalProps> = ({handleClose, open, control, name}
 
    const saveDate = () => {
       handleClose()
-      console.log("Date")
    }
 
   return ( 

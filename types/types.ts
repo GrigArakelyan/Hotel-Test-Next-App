@@ -27,3 +27,9 @@ export type HeaderImageType = {
    height0: number, 
    name: string
 }
+
+export type FilterRoomsType = {
+   adults: number;
+   children: number;
+   day: string;
+}

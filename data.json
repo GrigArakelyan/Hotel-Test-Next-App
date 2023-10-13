@@ -1,112 +1,119 @@
 {
-      "header-images": [
-            {
-                  "src": "/Image.png", 
-                  "width": 1440, 
-                  "height0": 680, 
-                  "name": "HeaderImageOne"
-            },
-            {
-                  "src": "/Image.png", 
-                  "width": 1440, 
-                  "height0": 680, 
-                  "name": "HeaderImageTwo"
-            },
-            {
-                  "src": "/Image.png", 
-                  "width": 1440, 
-                  "height0": 680, 
-                  "name": "HeaderImageThree"
-            }
-      ],
-
-      "categories" : [
-            {
-                  "lable" : "Rooms", 
-                  "category": "rooms", 
-                  "src":"Rooms.png", 
-                  "href": "/rooms", 
-                  "type": "big",
-                  "quantity" : {
-                        "adults": 2,
-                        "children" : 2
-                        }
-            },
-            {
-                  "lable" : "Dinning", 
-                  "category": "dinning", 
-                  "src":"Dining.png", 
-                  "href": "/dinning", 
-                  "type": "small",
-                  "quantity" : {
-                        "adults": 2,
-                        "children" : 2
-                        }
-            },
-            {
-                  "lable" : "Conferance & Meetings", 
-                  "category": "conferance & meetings", 
-                  "src":"Conferences.png", 
-                  "href": "/conference", 
-                  "type": "small",
-                  "quantity" : {
-                        "adults": 7,
-                        "children" : 0
-                        }
-            },
-            {
-                  "lable" : "Service & Facilities", 
-                  "category": "service & facilities", 
-                  "src":"Service.png", 
-                  "href": "/service", 
-                  "type": "small",
-                  "quantity" : {
-                        "adults": 10,
-                        "children" : 0
-                        }
-            },
-            {
-                  "lable" : "Wedding Package", 
-                  "category": "wedding package", 
-                  "src":"Wedding.png", 
-                  "href": "/wedding", 
-                  "type": "small",
-                  "quantity" : {
-                        "adults": 10,
-                        "children" : 10
-                        }
-            }
-      ],
-
-      "special-offers" : [
-            {
-               "lable": "Hooneymoon",
-               "categoty": "Room", 
-               "src": "Hooneymoon.png", 
-               "text": "Indulge in a Memorable One-Time Romantic Dinner for Two", 
-               "price": 699, 
-               "numberOfPeople": 2,
-               "kindOf": "night"
-            },
-            {
-               "lable": "Meetings",
-               "categoty": "Room", 
-               "src": "Meetings.png", 
-               "text": "Experience an Exclusively Private Environment to Boost Your Productivity", 
-               "price": 999, 
-               "numberOfPeople": 30,
-               "kindOf": "night"
-            },
-            {
-               "lable": "Romantic Dining",
-               "categoty": "Dining", 
-               "src": "RomanticDining.png", 
-               "text": "Indulge in a Memorable One-Time Romantic Dinner for Two", 
-               "price": 499, 
-               "numberOfPeople": 2,
-               "kindOf": "table"
-            }
-      ],
-
-      "footer": ["About us", "FAQ", "Services & Facilities", "Contact", "Term of Use", "Careers", "Location", "Privacy Police", "How to book"]
+  "header-images": [
+    {
+      "src": "/Image.png",
+      "width": 1440,
+      "height0": 680,
+      "name": "HeaderImageOne"
+    },
+    {
+      "src": "/Image.png",
+      "width": 1440,
+      "height0": 680,
+      "name": "HeaderImageTwo"
+    },
+    {
+      "src": "/Image.png",
+      "width": 1440,
+      "height0": 680,
+      "name": "HeaderImageThree"
+    }
+  ],
+  "categories": [
+    {
+      "lable": "Rooms",
+      "category": "rooms",
+      "src": "Rooms.png",
+      "href": "/rooms",
+      "type": "big",
+      "quantity": {
+        "adults": 2,
+        "children": 2
+      }
+    },
+    {
+      "lable": "Dinning",
+      "category": "dinning",
+      "src": "Dining.png",
+      "href": "/dinning",
+      "type": "small",
+      "quantity": {
+        "adults": 4,
+        "children": 4
+      }
+    },
+    {
+      "lable": "Conferance & Meetings",
+      "category": "conferance & meetings",
+      "src": "Conferences.png",
+      "href": "/conference",
+      "type": "small",
+      "quantity": {
+        "adults": 7,
+        "children": 0
+      }
+    },
+    {
+      "lable": "Service & Facilities",
+      "category": "service & facilities",
+      "src": "Service.png",
+      "href": "/service",
+      "type": "small",
+      "quantity": {
+        "adults": 10,
+        "children": 5
+      }
+    },
+    {
+      "lable": "Wedding Package",
+      "category": "wedding package",
+      "src": "Wedding.png",
+      "href": "/wedding",
+      "type": "small",
+      "quantity": {
+        "adults": 10,
+        "children": 10
+      }
+    }
+  ],
+  "special-offers": [
+    {
+      "lable": "Hooneymoon",
+      "categoty": "Room",
+      "src": "Hooneymoon.png",
+      "text": "Indulge in a Memorable One-Time Romantic Dinner for Two",
+      "price": 699,
+      "numberOfPeople": 2,
+      "kindOf": "night"
+    },
+    {
+      "lable": "Meetings",
+      "categoty": "Room",
+      "src": "Meetings.png",
+      "text": "Experience an Exclusively Private Environment to Boost Your Productivity",
+      "price": 999,
+      "numberOfPeople": 30,
+      "kindOf": "night"
+    },
+    {
+      "lable": "Romantic Dining",
+      "categoty": "Dining",
+      "src": "RomanticDining.png",
+      "text": "Indulge in a Memorable One-Time Romantic Dinner for Two",
+      "price": 499,
+      "numberOfPeople": 2,
+      "kindOf": "table"
+    }
+  ],
+  "footer": [
+    "About us",
+    "FAQ",
+    "Services & Facilities",
+    "Contact",
+    "Term of Use",
+    "Careers",
+    "Location",
+    "Privacy Police",
+    "How to book"
+  ]
 }

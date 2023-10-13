@@ -1,10 +1,14 @@
 import { getCaregoriesURL, getFooterURl, getSpecialOffersURL } from "@/constants/url";
+import { RoomItemType } from "@/types/types";
 
-export const getTypeHotelRooms = async () => {
+
+
+export const getTypeHotelRooms:() => Promise<RoomItemType[]> = async () => {
    const res = await fetch(getCaregoriesURL);
-   const data = res.json();
-   return data 
+   const data:Promise<RoomItemType[]> = res.json();
+   return data
 }
+
 
 export const getSpecialOffers = async () => {
    const res = await fetch(getSpecialOffersURL);

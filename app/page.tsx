@@ -3,13 +3,20 @@ import HotelRooms from "@/Components/HotelRooms/HotelRooms"
 import RoomBooking from "@/Components/RoomBooking/RoomBooking"
 import { FC } from "react"
 
-
-const Home:FC = () => {
+type HotelRoomsProp = {
+  searchParams: {
+     adults: string | undefined;
+     children: string | undefined;
+     day: string;
+  }
+}
+const Home:FC<HotelRoomsProp> = ({searchParams}) => {
+  console.log(searchParams);
 
   return (
     <div>
       <RoomBooking />
-      <HotelRooms />
+      <HotelRooms searchParams={searchParams}/>
       <BestOffer />
     </div>
   )

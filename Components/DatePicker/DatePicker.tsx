@@ -19,7 +19,7 @@ const BasicDatePicker:React.FC<BasicDateProps> = ({control, name}) => {
       render={({ field }) => (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={['DatePicker']}>
-        <DatePicker label="Basic date picker" 
+        <DatePicker 
         { ...field }/>
       </DemoContainer>
     </LocalizationProvider>
