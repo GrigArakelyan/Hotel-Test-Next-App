@@ -11,7 +11,6 @@ type HotelRoomsProp = {
   }
 }
 const Home:FC<HotelRoomsProp> = ({searchParams}) => {
-  console.log(searchParams);
 
   return (
     <div>
