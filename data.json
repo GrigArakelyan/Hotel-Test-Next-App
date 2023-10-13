@@ -1,24 +1,4 @@
 {
-  "header-images": [
-    {
-      "src": "/Image.png",
-      "width": 1440,
-      "height0": 680,
-      "name": "HeaderImageOne"
-    },
-    {
-      "src": "/Image.png",
-      "width": 1440,
-      "height0": 680,
-      "name": "HeaderImageTwo"
-    },
-    {
-      "src": "/Image.png",
-      "width": 1440,
-      "height0": 680,
-      "name": "HeaderImageThree"
-    }
-  ],
   "categories": [
     {
       "lable": "Rooms",
@@ -38,7 +18,7 @@
       "href": "/dinning",
       "type": "small",
       "quantity": {
-        "adults": 4,
+        "adults": 5,
         "children": 4
       }
     },

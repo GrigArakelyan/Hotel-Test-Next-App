@@ -8,6 +8,7 @@ type SelectProps = {
   control: any
   name: string;
 }
+
 const BasicSelect:React.FC<SelectProps> = ({control, name}) => {
 
   const selectValue:string[] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
@@ -16,11 +17,17 @@ const BasicSelect:React.FC<SelectProps> = ({control, name}) => {
     <Box sx={{ minWidth: 65 }}>
       <Controller  
           name={name.toLowerCase()}
+          defaultValue={'0'}
           control={control}
           render={({ field }) => ( 
-          <Select sx={{border: "none"}}
+          <Select sx={{
+            "& fieldset": {
+              border: "none",
+            },
+          }}
             {...field}
             id={name}
+            
         >
           {selectValue.map((value) => (
             <MenuItem sx={{border: "none"}} value={value}>{value}</MenuItem>

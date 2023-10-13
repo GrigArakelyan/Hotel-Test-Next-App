@@ -17,7 +17,7 @@ const Home:FC<HotelRoomsProp> = ({searchParams}) => {
     <div>
       <RoomBooking />
       <HotelRooms searchParams={searchParams}/>
-      <BestOffer />
+      <BestOffer searchParams={searchParams}/>
     </div>
   )
 }

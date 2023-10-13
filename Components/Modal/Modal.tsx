@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import BasicDatePicker from '../DatePicker/DatePicker';
 import Button from '../Button/Button';
-import Style from "./modal.module.scss"
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -12,12 +11,27 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: 400,
   height: 200,
-  bgcolor: 'background.paper',
+  bgcolor: '#F3F3F3',
   border: 'none',
-  borderRadius: "10px" ,
+  borderRadius: '10px' ,
   boxShadow: 24,
   p: 4,
 };
+const styleBox = {
+   marginTop: '10%',
+   marginBottom: '10%',
+   marginLeft: '15%',
+   marginRight: '15%',
+   border: 'none',
+}
+const styleButton = {
+   width: '50%',
+   marginTop: '10%',
+   marginBottom: '10%',
+   marginLeft: '25%',
+   marginRight: '25%',
+   border: 'none',
+}
 
 type BasicModalProps = {
    handleClose: () => void
@@ -40,12 +54,12 @@ const BasicModal:React.FC<BasicModalProps> = ({handleClose, open, control, name}
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-            <div className={Style.center}>
+            <Box sx={styleBox}>
                <BasicDatePicker control={control} name={name}/>
-            </div>
-            <div className={Style.button}>
+            </Box>
+            <Box sx={styleButton}>
                <Button title='Save' type='button' onClick={saveDate}/>
-            </div>
+            </Box>
         </Box>
       </Modal>
   );

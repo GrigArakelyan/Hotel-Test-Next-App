@@ -36,7 +36,6 @@ const HotelRooms:FC<HotelRoomsProp> = async ({searchParams}) => {
 
    const bigRooms:RoomItemType[] = rooms.filter(room => room.type === "big");
    const smallRooms:RoomItemType[] = rooms.filter(room => room.type === "small");
-
    const filterBigRooms:RoomItemType[] = filterRooms.filter(room => room.type === "big");
    const filterSmallRooms:RoomItemType[] = filterRooms.filter(room => room.type === "small");
    

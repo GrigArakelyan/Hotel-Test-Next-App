@@ -7,11 +7,7 @@ import HeaderImage from "./HeaderImage"
 
 const Header:FC = async () => {
 
-
-
    return (
-
-      
       <header className={Style.header}>
          <div className={Style.headerDiv}>
             <HeaderImage />
