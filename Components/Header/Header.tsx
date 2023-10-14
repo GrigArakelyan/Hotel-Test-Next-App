@@ -5,7 +5,7 @@ import { FC } from "react"
 import HeaderImage from "./HeaderImage"
 
 
-const Header:FC = async () => {
+const Header:FC = () => {
 
    return (
       <header className={Style.header}>

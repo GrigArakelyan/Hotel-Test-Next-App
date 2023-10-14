@@ -37,3 +37,22 @@
    font-size: 16px;
    line-height: 19px;
 }
+
+.image{
+   width: 23px;
+   height: 23px;
+}
+
+@media screen and (max-width: 1200px){
+   .image{
+      width: 21px;
+      height: 21px;
+   }
+}
+
+@media screen and (max-width: 900px){
+   .image{
+      width: 19px;
+      height: 19px;
+   }
+}

@@ -10,6 +10,7 @@ type HotelRoomsProp = {
      day: string;
   }
 }
+
 const Home:FC<HotelRoomsProp> = ({searchParams}) => {
 
   return (

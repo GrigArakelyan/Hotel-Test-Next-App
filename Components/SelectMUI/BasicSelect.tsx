@@ -27,10 +27,9 @@ const BasicSelect:React.FC<SelectProps> = ({control, name}) => {
           }}
             {...field}
             id={name}
-            
-        >
+          >
           {selectValue.map((value) => (
-            <MenuItem sx={{border: "none"}} value={value}>{value}</MenuItem>
+            <MenuItem sx={{border: "none"}} key={value} value={value}>{value}</MenuItem>
           ))}
         </Select>
       )}/>

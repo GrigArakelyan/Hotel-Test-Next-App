@@ -35,8 +35,8 @@ const BestOffer:FC<SpecialOffersProp> = async ({searchParams}) => {
    return(
       <div className={Style.container}>
          <BestOfferTitle />
-         {filterSpecialOffersData ? 
-            <div className={Style.itemsDiv}>
+         {filterSpecialOffersData.length ? 
+            <div className={filterSpecialOffersData.length === 1 ? Style.itemsOneDiv :Style.itemsDiv}>
                {filterSpecialOffersData.map((item) => (
                   <BestOfferItem item={item}/>
                ))}
