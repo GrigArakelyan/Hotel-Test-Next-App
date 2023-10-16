@@ -1,9 +1,9 @@
 import { SpecialOffersType } from "@/types/types";
-import BestOfferItem from "./BestOfferItem/BestOfferItem"
 import BestOfferTitle from "./BestOfferTitle/BestOfferTitle"
 import Style from "./bestOffer.module.scss"
 import { FC } from "react";
 import { getSpecialOffers } from "@/services/fetch";
+import BestOfferItems from "./BestOfferItems";
 
 
 type SpecialOffersProp = {
@@ -30,24 +30,18 @@ const BestOffer:FC<SpecialOffersProp> = async ({searchParams}) => {
       if(!adults && children && room.numberOfPeople >= +children){
          return room 
       }
+      if(adults && children && +adults === 0 && +children === 0 && day === "Invalid Date"){
+         return room
+      }
    })
 
    return(
       <div className={Style.container}>
          <BestOfferTitle />
-         {filterSpecialOffersData.length ? 
-            <div className={filterSpecialOffersData.length === 1 ? Style.itemsOneDiv :Style.itemsDiv}>
-               {filterSpecialOffersData.map((item) => (
-                  <BestOfferItem item={item}/>
-               ))}
-            </div>
-         :
-            <div className={Style.itemsDiv}>
-               {data.map((item) => (
-                  <BestOfferItem item={item}/>
-               ))}
-            </div>
-         }
+            {filterSpecialOffersData.length ? 
+            <BestOfferItems data={filterSpecialOffersData} />
+            :
+            <BestOfferItems data={data} />}
       </div>
    )
 }
