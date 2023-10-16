@@ -9,7 +9,7 @@ type BestOfferItemProps = {
 }
 const BestOfferItems:FC<BestOfferItemProps> = ({data}) => {
    return (
-      <div className={data.length === 1 ? Style.itemsOneDiv :Style.itemsDiv}>
+      <div className={data.length === 1 ? Style.itemsOneDiv : Style.itemsDiv}>
          {data.map((item) => (
             <BestOfferItem item={item}/>
          ))}
