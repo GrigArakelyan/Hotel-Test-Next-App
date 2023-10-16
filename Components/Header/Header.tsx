@@ -2,7 +2,8 @@ import Style from "./header.module.scss"
 import Navigation from "../Navigation/Navigation"
 import SlideDot from "../SlideDot/SlideDot"
 import { FC } from "react"
-import HeaderImage from "./HeaderImage"
+import Image from "next/image"
+import { HeaderImagePNG } from "@/constants/public"
 
 
 const Header:FC = () => {
@@ -10,7 +11,7 @@ const Header:FC = () => {
    return (
       <header className={Style.header}>
          <div className={Style.headerDiv}>
-            <HeaderImage />
+            <Image src={HeaderImagePNG} alt="" width={1240} height={680} className={Style.headerImage}/>
             <div className={Style.headerNavDiv}>
                <Navigation />
             </div>

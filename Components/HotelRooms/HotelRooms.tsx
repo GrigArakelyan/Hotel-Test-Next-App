@@ -1,10 +1,8 @@
 import { RoomItemType } from "@/types/types";
 import Style from "./hotelRooms.module.scss"
-import RoomItem from "./Item/RoomItem";
-import OtherRooms from "./Item/OtherRooms";
-import Link from "next/link";
 import { FC } from "react";
 import { getTypeHotelRooms } from "@/services/fetch";
+import HotelItems from "./HotelItems";
 
 
 type HotelRoomsProp = {
@@ -32,51 +30,14 @@ const HotelRooms:FC<HotelRoomsProp> = async ({searchParams}) => {
          return room
       }
    })
-
-
-   const bigRooms:RoomItemType[] = rooms.filter(room => room.type === "big");
-   const smallRooms:RoomItemType[] = rooms.filter(room => room.type === "small");
-   const filterBigRooms:RoomItemType[] = filterRooms.filter(room => room.type === "big");
-   const filterSmallRooms:RoomItemType[] = filterRooms.filter(room => room.type === "small");
    
    
    return (
       <div className={Style.hotelRoomsDiv}>
          {filterRooms.length ? 
-            <div className={filterBigRooms.length ? Style.itemsDiv : Style.notBigRoom}>
-               <div className={filterBigRooms.length ? Style.bigRoom : Style.none}>
-                  {filterBigRooms.length && filterBigRooms.map((item) => (
-                     <Link href={item.href}>
-                        <RoomItem room={item}/>
-                     </Link>
-                  ))}
-               </div>
-               <div className={filterBigRooms.length ? Style.smallRoom : Style.notBigItem}>
-                  {filterSmallRooms.length && filterSmallRooms.map((item) => (
-                     <Link href={item.href}>
-                        <OtherRooms room={item} />
-                     </Link>
-                  ))}
-               </div>
-            </div> 
-            :
-            <div className={bigRooms.length ? Style.itemsDiv : Style.notBigRoom}>
-               <div className={bigRooms.length ? Style.bigRoom : Style.none}>
-                  {bigRooms.length && bigRooms.map((item) => (
-                     <Link href={item.href}>
-                        <RoomItem room={item}/>
-                     </Link>
-                  ))}
-               </div>
-               <div className={bigRooms.length ? Style.smallRoom : Style.notBigItem}>
-                  {smallRooms.length && smallRooms.map((item) => (
-                     <Link href={item.href}>
-                        <OtherRooms room={item} />
-                     </Link>
-                  ))}
-               </div>
-            </div>
-         }  
+         <HotelItems roomsData={filterRooms}/>
+         :
+         <HotelItems roomsData={rooms}/>}  
       </div>
    )
 }
