@@ -5,8 +5,8 @@ import { FC } from "react"
 
 type HotelRoomsProp = {
   searchParams: {
-     adults: string | undefined;
-     children: string | undefined;
+     adults: number;
+     children: number;
      day: string;
   }
 }

@@ -11,13 +11,13 @@ type SelectProps = {
 
 const BasicSelect:React.FC<SelectProps> = ({control, name}) => {
 
-  const selectValue:string[] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
+  const selectValue:number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
   return (
     <Box sx={{ minWidth: 65 }}>
       <Controller  
           name={name.toLowerCase()}
-          defaultValue={'0'}
+          defaultValue={0}
           control={control}
           render={({ field }) => ( 
           <Select sx={{

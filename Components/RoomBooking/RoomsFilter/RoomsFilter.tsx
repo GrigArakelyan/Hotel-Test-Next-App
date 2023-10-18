@@ -1,13 +1,13 @@
 "use client"
-import { FC, FormEventHandler, useCallback, useState } from "react"
+import { FC, useState } from "react"
 import RoomBookingDate from "./RoomBookingDate/RoomBookingDate"
 import Button from "@/Components/Button/Button"
 import Style from "../roomBooking.module.scss"
 import RoomSelects from "./RoomSelects/RoomSelects"
 import { useForm } from "react-hook-form"
 import BasicModal from "@/Components/Modal/Modal"
-import { FilterRoomsType, RoomItemType } from "@/types/types"
-import { useRouter, useSearchParams } from "next/navigation"
+import { FilterRoomsType } from "@/types/types"
+import { useRouter } from "next/navigation"
 import { HOME } from "@/constants/rout"
 
 

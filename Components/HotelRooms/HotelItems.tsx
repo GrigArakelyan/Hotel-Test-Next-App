@@ -25,7 +25,7 @@ const HotelItems:FC<HotelItemProps> = ({roomsData}) =>{
                </Link>
             ))}
          </div>
-         <div className={bigRoomData.length ? Style.smallRoom : Style.notBigItem}>
+         <div className={smallRoomData.length ? Style.smallRoom : Style.none}>
             {smallRoomData.length && smallRoomData.map((item) => (
                <Link href={item.href}>
                   <OtherRooms room={item} />
