@@ -28,7 +28,14 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
+
 }
+.smallRoom2{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
 .notBigItem{
    display: flex;
    flex-wrap: wrap;

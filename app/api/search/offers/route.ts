@@ -14,15 +14,6 @@ export const GET = async (req: Request) => {
       if(adults&& children&& room.numberOfPeople >= +adults + +children){
          return room 
       }
-      if(adults&& children&& +children === 0 && room.numberOfPeople >= +adults){
-         return room
-      }
-      if(adults&& children&& +adults === 0 &&  room.numberOfPeople >= +children){
-         return room 
-      }
-      if(adults&& children&& +adults === 0 && +children === 0){
-         return room
-      }
    })
    return NextResponse.json(filterSpecialOffers);
 }
