@@ -16,7 +16,7 @@ const HotelRooms:FC<HotelRoomsProp> = async ({searchParams}) => {
    const {adults, children, day} = searchParams
 
    const rooms:RoomItemType[] = await getTypeHotelRooms();
-   const filterRooms:RoomItemType[] = await getfilterRooms(adults, children, day)
+   const filterRooms:RoomItemType[] = await getfilterRooms(adults, children, day);
    
    
    return (

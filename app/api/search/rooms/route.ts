@@ -10,16 +10,16 @@ export const GET = async (req: Request) => {
 
    const rooms = categories;
 
-   const filterRooms:RoomItemType[] = rooms.filter((room) => {
+   const filterRooms:RoomItemType[] = rooms.filter(room => {
       if(adults && children &&  room.quantity.adults >= +adults && room.quantity.children >= +children) {
          return room
-      }
-      if(adults && children && +children === 0 && room.quantity.adults >= +adults){
+      } else 
+      if(adults && children && +children === 0 && room.quantity.adults >= +adults && room.quantity.children >= +children){
          return room
-      }
-      if(adults && children && +adults === 0 && room.quantity.children >= +children){
+      } else
+      if(adults && children && +adults === 0 && room.quantity.children >= +children && room.quantity.adults >= +adults){
          return room
-      }
+      } else
       if(adults && children && +adults === 0 && +children === 0){
          return room
       }
