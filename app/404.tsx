@@ -1,10 +1,13 @@
 import { FC } from "react"
 
-const Error:FC = () => {
+type ErrorProps = {
+   error:Error
+}
+const Error:FC<ErrorProps> = ({error}) => {
 
    return(
       <div className="centerDiv">
-         <h2 className="errorH">Error</h2>
+         <h2 className="errorH">Error {error.message}</h2>
       </div>
    )
 }
