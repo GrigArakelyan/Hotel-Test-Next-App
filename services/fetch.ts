@@ -1,4 +1,4 @@
-import { getCategoriesURL, getFooterURl, getSpecialOffersURL } from "@/constants/url";
+import { getCategoriesURL, getFilterOffersURL, getFooterURl, getSpecialOffersURL, getFilterRoomsURL } from "@/constants/url";
 import { RoomItemType } from "@/types/types";
 
 
@@ -29,13 +29,17 @@ export const getFooterTexts = async () => {
 }
 
 export const getfilterRooms = async (adults:number, children:number, day:string) => {
-   const res = await fetch(`http://localhost:3000/api/search/rooms?adults=${adults}&children=${children}&day=${day}`)
+   const res = await fetch(getFilterRoomsURL(adults, children, day))
+   if(!res.ok) throw new Error('Fetch Error')
+
    const data = await res.json();
    return data 
 }
 
 export const getfilterSpecialOffers = async (adults:number, children:number, day:string) => {
-   const res = await fetch(`http://localhost:3000/api/search/offers?adults=${adults}&children=${children}&day=${day}`)
+   const res = await fetch(getFilterOffersURL(adults, children, day))
+   if(!res.ok) throw new Error('Fetch Error')
+
    const data = await res.json();
    return data 
 }

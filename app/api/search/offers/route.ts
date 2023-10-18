@@ -20,7 +20,7 @@ export const GET = async (req: Request) => {
       if(adults&& children&& +adults === 0 &&  room.numberOfPeople >= +children){
          return room 
       }
-      if(adults&& children&& +adults === 0 && +children === 0 && day === "Invalid Date"){
+      if(adults&& children&& +adults === 0 && +children === 0){
          return room
       }
    })
