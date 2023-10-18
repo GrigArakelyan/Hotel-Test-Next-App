@@ -1,4 +1,5 @@
 export type RoomItemType = {
+   id: number;
    src: string;
    lable: string;
    href: string;
@@ -11,6 +12,7 @@ export type RoomItemType = {
 }
 
 export type SpecialOffersType = {
+   id: number;
    lable: string,
    categoty: string, 
    src: string, 

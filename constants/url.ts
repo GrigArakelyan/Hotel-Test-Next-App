@@ -1,4 +1,4 @@
-export const getCategoriesURL = `http://localhost:3100/categories`
-export const getSpecialOffersURL = `http://localhost:3100/special-offers`
-export const getFooterURl = `http://localhost:3100/footer`
+export const getCategoriesURL = `http://localhost:3000/api/categories`
+export const getSpecialOffersURL = `http://localhost:3000/api/special-offers`
+export const getFooterURl = `http://localhost:3000/api/footer`
 

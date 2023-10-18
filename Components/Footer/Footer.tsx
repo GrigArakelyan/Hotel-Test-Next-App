@@ -30,7 +30,7 @@ const Footer:FC = async () => {
             <div className={Style.rightDiv}>
                <Image src={HoteLogo} alt="" width={156} height={82} className={Style.footerImg}/>
                <div className={Style.textsDiv}>
-                  {data.map((text) =>(
+                  {data && data.map((text) =>(
                      <span className={Style.text} key={text}>{text}</span>
                   ))}
                </div>
