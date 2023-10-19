@@ -4,24 +4,18 @@ import { NextResponse } from "next/server";
 
 export const GET = async (req: Request) => {
    const { searchParams } = new URL(req.url);
-   const adults = searchParams.get("adults");
-   const children = searchParams.get("children");
-   const day = searchParams.get("day");
+   const adults: number | undefined = Number(searchParams.get("adults"));
+   const children: number | undefined = Number(searchParams.get("children"));
+   const day:string | undefined = searchParams.get("day")?.toString();
+
+
 
    const rooms = categories;
 
+
    const filterRooms:RoomItemType[] = rooms.filter(room => {
-      if(adults && children &&  room.quantity.adults >= +adults && room.quantity.children >= +children) {
-         return room
-      } else 
-      if(adults && children && +children === 0 && room.quantity.adults >= +adults && room.quantity.children >= +children){
-         return room
-      } else
-      if(adults && children && +adults === 0 && room.quantity.children >= +children && room.quantity.adults >= +adults){
-         return room
-      } else
-      if(adults && children && +adults === 0 && +children === 0){
-         return room
+      if(adults && children){
+         return (room.quantity.adults >= adults && room.quantity.children >= children)
       }
    })
    return NextResponse.json(filterRooms);

@@ -9,6 +9,7 @@ import BasicModal from "@/Components/Modal/Modal"
 import { FilterRoomsType } from "@/types/types"
 import { useRouter } from "next/navigation"
 import { HOME } from "@/constants/rout"
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 
 
 
@@ -24,7 +25,9 @@ const RoomsFilter:FC = () => {
 
 
    const filterRoom:(data:FilterRoomsType) => void = (data) => {
-      router.push(`${HOME}?adults=${data.adults}&children=${data.children}&day=${data.day}`)
+      const adapter = new AdapterDayjs() 
+      const day: string | undefined = adapter.date(data.day)?.format('DD/MM/YYYY') || adapter.date(new AdapterDayjs())?.format('DD/MM/YYYY')
+      router.push(`${HOME}?adults=${data.adults}&children=${data.children}&day=${day}`)
    }
 
    

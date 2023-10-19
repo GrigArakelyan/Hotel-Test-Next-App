@@ -7,24 +7,23 @@ import HotelItems from "./HotelItems";
 
 type HotelRoomsProp = {
    searchParams: {
-      adults: number;
-      children: number;
-      day: string;
+      adults: number | undefined;
+      children: number | undefined;
+      day: string | undefined;
    }
 }
 const HotelRooms:FC<HotelRoomsProp> = async ({searchParams}) => {
-   const {adults, children, day} = searchParams
+   const {adults, children, day} = searchParams;
 
-   const rooms:RoomItemType[] = await getTypeHotelRooms();
-   const filterRooms:RoomItemType[] = await getfilterRooms(adults, children, day);
+   let filterRooms :RoomItemType[] = await getTypeHotelRooms();
+   if(adults && children && day){
+      filterRooms = await getfilterRooms(adults, children, day);
+   }
    
    
    return (
       <div className={Style.hotelRoomsDiv}>
-         {filterRooms.length ? 
-         <HotelItems roomsData={filterRooms}/>
-         :
-         <HotelItems roomsData={rooms}/>}  
+         {filterRooms.length ? <HotelItems roomsData={filterRooms} /> : null}
       </div>
    )
 }

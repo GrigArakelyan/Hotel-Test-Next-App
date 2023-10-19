@@ -3,6 +3,7 @@ export const getSpecialOffersURL = `http://localhost:3000/api/special-offers`;
 export const getFooterURl = `http://localhost:3000/api/footer`;
 
 export const getFilterRoomsURL:(adults:number, children:number, day:string) => string = (adults, children, day) => {
+   console.log(day, "ASD")
    return `http://localhost:3000/api/search/rooms?adults=${adults}&children=${children}&day=${day}`
 }
 
