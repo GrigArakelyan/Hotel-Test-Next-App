@@ -1,6 +1,6 @@
 import { FC } from "react"
 
-const About:FC = () => {
+const About:FC = async () => {
    return (
      <h1>About Page</h1>
    )
