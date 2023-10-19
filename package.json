@@ -26,6 +26,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "dayjs": "^1.11.10",
+    "eslint-plugin-react": "^7.33.2",
     "sass": "^1.69.0",
     "styled-components": "^6.0.8",
     "typescript": "latest"
