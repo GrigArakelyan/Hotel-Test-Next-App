@@ -8,15 +8,14 @@ export const GET = async (req: Request) => {
    const children: number | undefined = Number(searchParams.get("children"));
    const day:string | undefined = searchParams.get("day")?.toString();
 
-
-
-   const rooms = categories;
-
-
-   const filterRooms:RoomItemType[] = rooms.filter(room => {
+   const filterRooms:RoomItemType[] = categories.filter(room => {
       if(adults && children){
          return (room.quantity.adults >= adults && room.quantity.children >= children)
-      }
+      } else if(adults && children === 0){
+         return (room.quantity.adults >= adults)
+      } else if (children && adults === 0){
+         return (room.quantity.adults >= children)
+      } 
    })
    return NextResponse.json(filterRooms);
 }
