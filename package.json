@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "mock": "json-server -w data.json -p 3100 -d 350"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -26,7 +25,6 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "dayjs": "^1.11.10",
-    "eslint-plugin-react": "^7.33.2",
     "sass": "^1.69.0",
     "styled-components": "^6.0.8",
     "typescript": "latest"
