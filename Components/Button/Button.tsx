@@ -6,11 +6,13 @@ interface ButtonProps {
    type: "button" | "reset" | "submit"
    border?: boolean | undefined;
    onClick?: () => void
+   disabled?: boolean
 }
-const Button:FC<ButtonProps> = ({title, type, border, onClick}) => {
+const Button:FC<ButtonProps> = ({title, type, border, onClick, disabled}) => {
    return(
       <div className={Style.buttonDiv}>
       <button className={border ? Style.buttonBorder : Style.button} 
+         disabled={disabled}
          type={type} onClick={onClick}>
       {title}</button>
       </div>

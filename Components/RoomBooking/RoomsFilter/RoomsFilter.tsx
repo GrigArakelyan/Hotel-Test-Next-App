@@ -37,7 +37,7 @@ const RoomsFilter:FC = () => {
          <BasicModal handleClose={handleClose} open={open} control={control} name={"day"}/>
          <RoomSelects control={control}/>
          <div className={Style.buttonDiv}>
-            <Button title={"BOOK NOW"} type="submit"/>
+            <Button title={"BOOK NOW"} type="submit" />
          </div>
       </form>
    )

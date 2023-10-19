@@ -11,7 +11,7 @@ const BestOfferItems:FC<BestOfferItemProps> = ({data}) => {
    return (
       <div className={data.length === 1 ? Style.itemsOneDiv : data.length === 2  ? Style.itemstwoDiv :Style.itemsDiv}>
          {data.map((item) => (
-            <BestOfferItem item={item}/>
+            <BestOfferItem key={item.id} item={item}/>
          ))}
       </div>
    )

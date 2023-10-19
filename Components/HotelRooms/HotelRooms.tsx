@@ -16,7 +16,7 @@ const HotelRooms:FC<HotelRoomsProp> = async ({searchParams}) => {
    const {adults, children, day} = searchParams;
 
    let filterRooms :RoomItemType[] = await getTypeHotelRooms();
-   if(adults && children && day || adults === 0 && children === 0 && day){
+   if(adults && children && day){
       filterRooms = await getfilterRooms(adults, children, day);
    } 
    
